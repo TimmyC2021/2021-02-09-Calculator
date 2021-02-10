@@ -1,0 +1,32 @@
+.moreKeys {
+  position: absolute;
+  width: 150px;
+  height: 440px;
+  border: 1px black solid;
+  border-radius: 20px;
+  top: 160px;
+  left: 360px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: space-evenly;
+  justify-items: center;
+  visibility: hidden;
+  transition: visibility 1s;
+}
+
+.morekeys__widebutton {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: burlywood;
+  box-shadow: 5px 5px 2px 1px grey;
+  transition: box-shadow 0.1s;
+  line-height: 50px;
+  font-size: 16px;
+  user-select: none;
+  text-align: center;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/a3c09e3783.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./running.css">
+    <script src="./script.js"></script>
+
+    <title>Runners Calculator</title>
+</head>
+<body>
+    <main class="calcCase" id="calcCase">
+        <div>
+            <div class="calcDisplay" id="calcDisplay">
+                0
+            </div>
+
+            <div class="moreKeys" id="moreKeys">
+                <!-- The secret hidden keys-->
+                <div class="morekeys__widebutton" id="wideKey1">(not) parkrun</div>
+                <div class="morekeys__widebutton" id="wideKey2">10k</div>
+                <div class="morekeys__widebutton" id="wideKey3">Half</div>
+                <div class="morekeys__widebutton" id="wideKey4">Marathon</div>
+                <div class="morekeys__widebutton" id="wideKey5">@</div>
+                <div class="morekeys__widebutton" id="wideKey6">!</div>
+            </div>
+
+            <div class="keypad" id="keypad">
+                <div class="keypad__smallbutton" id="key18">MR</div>
+                <div class="keypad__smallbutton" id="key12">M-</div>
+                <div class="keypad__smallbutton" id="key22">?</div>
+                <div class="keypad__smallbutton" id="runningMagic" title="Running Magic" 
+                    data-running="closed" onclick="toggleRunning(event)"><i class="fas fa-running"></i></div>
+                <div class="keypad__smallbutton" id="key19">MC</div>
+                <div class="keypad__smallbutton" id="key16">M+</div>
+                <div class="keypad__smallbutton" id="key20">AC</div>
+                <div class="keypad__smallbutton" id="key21">Del</div>
+                <div class="keypad__smallbutton" id="key07">7</div>
+                <div class="keypad__smallbutton" id="key08">8</div>
+                <div class="keypad__smallbutton" id="key09">9</div>
+                <div class="keypad__smallbutton" id="key12">+</div>
+                <div class="keypad__smallbutton" id="key06">6</div>
+                <div class="keypad__smallbutton" id="key05">5</div>
+                <div class="keypad__smallbutton" id="key04">4</div>
+                <div class="keypad__smallbutton" id="key13">-</div>
+                <div class="keypad__smallbutton" id="key01">1</div>
+                <div class="keypad__smallbutton" id="key02">2</div>
+                <div class="keypad__smallbutton" id="key03">3</div>
+                <div class="keypad__smallbutton" id="key14">+-</div>
+                <div class="keypad__smallbutton" id="key10">00</div>
+                <div class="keypad__smallbutton" id="key00">0</div>
+                <div class="keypad__smallbutton" id="key11">.</div>
+                <div class="keypad__smallbutton" id="key15">=</div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

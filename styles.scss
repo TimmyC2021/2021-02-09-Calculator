@@ -1,0 +1,103 @@
+// Variables
+@import './variables.scss';
+
+// Additional styles
+@import './running.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $fontFamily;
+    font-size: $fontSizeLarge;
+}
+
+.calcCase {
+    // Center on page vertically
+    // Center on page horizontally
+    
+    // Colour and background themes??
+
+    width: $calcCaseWidth;
+    height: $calcCaseHeight;
+    border: 1px black solid;
+    border-radius: 40px;
+    margin: auto;
+    
+    position: fixed;
+    margin-left: calc(50vw - 180px);
+    margin-top: calc(50vh - 310px);
+
+    background-color: $calcCaseColor;
+    box-shadow: 15px 15px 1px 0px grey;        
+
+    transition: width 1s;
+}
+
+.calcDisplay {
+    position: relative;
+    width: $calcDisplayWidth;   
+    height: $calcDisplayHeight;
+    line-height: $calcDisplayHeight;
+    text-align: right;
+    font-size: $fontSizeLarge;
+    border: 1px black solid;
+    border-radius: 20px;
+    top: $calcDisplayTop;
+    left: $calcDisplayLeft;
+    background-color: $calcDisplayBackColor;
+    box-shadow: -5px -5px 2px 1px grey;        
+
+}
+
+.keypad {
+    position: absolute;
+    width: $keyPadWidth;   
+    height: $keyPadHeight;
+    border: 1px black solid;
+    border-radius: 20px;
+    top: $keyPadTop;
+    left: $keyPadLeft;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    // Vertical position center of each smallbutton in its pigeon hole
+    align-content:space-evenly; 
+    
+    // Horizintally center contents of each smallbutton in its pigeon hole
+    justify-items: center;
+}
+
+.keypad__smallbutton {
+    // Size
+    width: $keysSmallButtonWidth;
+    height: $keysSmallButtonHeight;
+
+    // Appearance
+    border: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: $keysSmallBackColour;
+    box-shadow: 5px 5px 2px 1px grey;        
+    transition: box-shadow 0.1s;
+    
+    // Content
+    line-height: $keysSmallButtonHeight;
+    user-select: none;
+    text-align: center;
+}
+
+.keypad__smallbutton:hover, .morekeys__widebutton:hover {
+    background-color: $keysSmallBackColourHover;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+.keypad__smallbutton:active, .morekeys__widebutton:active {
+    background-color: $keysSmallBackColourHover;
+    font-weight: bolder;  box-shadow: -3px -3px 2px 0px black;        
+    cursor: pointer;
+}

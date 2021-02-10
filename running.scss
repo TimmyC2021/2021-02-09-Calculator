@@ -1,0 +1,45 @@
+// Variables
+@import './variables.scss';
+
+.moreKeys {
+    position: absolute;
+    width: $moreKeysWidth;   
+    height: $moreKeysHeight;
+    border: 1px black solid;
+    border-radius: 20px;
+    top: $moreKeysTop;
+    left: $moreKeysLeft;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    // Vertical position center of each smallbutton in its pigeon hole
+    align-content:space-evenly; 
+    
+    // Horizintally center contents of each smallbutton in its pigeon hole
+    justify-items: center;
+    visibility: hidden;
+    transition: visibility 1s;
+}
+
+.morekeys__widebutton {
+    // Size
+    width: $moreKeysButtonWidth;
+    height: $moreKeysButtonHeight;
+
+    // Appearance
+    border: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: $moreKeysButtonBackColour;
+    box-shadow: 5px 5px 2px 1px grey;        
+    transition: box-shadow 0.1s;
+    
+    // Content
+    line-height: $keysSmallButtonHeight;
+    font-size: $fontSizeSmall;
+    user-select: none;
+    text-align: center;
+}

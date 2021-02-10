@@ -1,0 +1,111 @@
+.moreKeys {
+  position: absolute;
+  width: 150px;
+  height: 440px;
+  border: 1px black solid;
+  border-radius: 20px;
+  top: 160px;
+  left: 360px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: space-evenly;
+  justify-items: center;
+  visibility: hidden;
+  transition: visibility 1s;
+}
+
+.morekeys__widebutton {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: burlywood;
+  box-shadow: 5px 5px 2px 1px grey;
+  transition: box-shadow 0.1s;
+  line-height: 50px;
+  font-size: 16px;
+  user-select: none;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  font-size: large;
+}
+
+.calcCase {
+  width: 360px;
+  height: 620px;
+  border: 1px black solid;
+  border-radius: 40px;
+  margin: auto;
+  position: fixed;
+  margin-left: calc(50vw - 180px);
+  margin-top: calc(50vh - 310px);
+  background-color: #37adca;
+  box-shadow: 15px 15px 1px 0px grey;
+  transition: width 1s;
+}
+
+.calcDisplay {
+  position: relative;
+  width: 300px;
+  height: 120px;
+  line-height: 120px;
+  text-align: right;
+  font-size: large;
+  border: 1px black solid;
+  border-radius: 20px;
+  top: 20px;
+  left: 30px;
+  background-color: white;
+  box-shadow: -5px -5px 2px 1px grey;
+}
+
+.keypad {
+  position: absolute;
+  width: 300px;
+  height: 440px;
+  border: 1px black solid;
+  border-radius: 20px;
+  top: 160px;
+  left: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-content: space-evenly;
+  justify-items: center;
+}
+
+.keypad__smallbutton {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: burlywood;
+  box-shadow: 5px 5px 2px 1px grey;
+  transition: box-shadow 0.1s;
+  line-height: 50px;
+  user-select: none;
+  text-align: center;
+}
+
+.keypad__smallbutton:hover, .morekeys__widebutton:hover {
+  background-color: #dbcab3;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.keypad__smallbutton:active, .morekeys__widebutton:active {
+  background-color: #dbcab3;
+  font-weight: bolder;
+  box-shadow: -3px -3px 2px 0px black;
+  cursor: pointer;
+}

@@ -1,0 +1,53 @@
+// Variables for everything
+
+// Fonts
+$fontFamily: arial;
+$fontSizeSmall: 15px;
+$fontSizeNormal: normal;
+$fontSizeLarge: large;
+
+// Main case details
+
+$calcCaseWidth: 360px;
+$calcCaseHeight: 620px;
+$calcCaseColor: rgb(55, 173, 202);
+
+// Display details
+
+$calcDisplayWidth: 300px;
+$calcDisplayHeight: 120px;
+$calcDisplayTop: 20px;
+$calcDisplayLeft: ($calcCaseWidth - $calcDisplayWidth) / 2;
+$calcDisplayBackColor: white;
+
+// Keypad size and position
+
+$keyPadWidth: $calcDisplayWidth;
+$keyPadHeight: 440px;
+$keyPadTop: ($calcCaseHeight + $calcDisplayHeight + $calcDisplayTop - $keyPadHeight) / 2;
+$keyPadLeft: ($calcCaseWidth - $keyPadWidth) / 2;
+
+// Individual keys 
+
+$keysSmallButtonWidth: 50px;
+$keysSmallButtonHeight: 50px;
+
+$keysSmallBackColour: burlywood;
+$keysSmallBackColourHover: rgb(219, 202, 179);
+
+// More keys size and pos
+
+$moreKeysWidth: $calcDisplayWidth / 2;
+$moreKeysHeight: $keyPadHeight;
+$moreKeysTop: $keyPadTop;
+$moreKeysLeft: $calcCaseWidth;
+
+// WideKeys
+
+$moreKeysButtonWidth: 100px;
+$moreKeysButtonHeight: $keysSmallButtonHeight;
+
+$moreKeysButtonBackColour: $keysSmallBackColour;
+$moreKeysButtonColourHover: $keysSmallBackColourHover;
+
+
