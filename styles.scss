@@ -7,9 +7,42 @@
 * {
     margin: 0;
     padding: 0;
+    //background-color: rgb(221, 62, 62);
     font-family: $fontFamily;
     font-size: $fontSizeLarge;
 }
+
+// Look at me ****************************** START ***********************************
+// Debugging aid as focus is often not on the browser
+
+// .fixedPosition {
+//     position: fixed;
+// }
+.fixedPosition {
+    position: relative;
+}
+.lookAtMe {
+    position: absolute;
+    width: 100vw;
+    color: red;
+    visibility: visible;
+    text-align: center;
+    margin-top: 10%;}
+.relax {
+    position: absolute;
+    width: 100vw;
+    color: green;
+    visibility: hidden;
+    text-align: center;
+    margin-top: 10%;
+}
+// Look at me ******************************  END  ***********************************
+
+
+
+
+
+
 
 .calcCase {
     // Center on page vertically
@@ -37,7 +70,7 @@
     position: relative;
     width: $calcDisplayWidth;   
     height: $calcDisplayHeight;
-    line-height: $calcDisplayHeight;
+    //line-height: $calcDisplayHeight;
     text-align: right;
     font-size: $fontSizeLarge;
     border: 1px black solid;
@@ -46,7 +79,26 @@
     left: $calcDisplayLeft;
     background-color: $calcDisplayBackColor;
     box-shadow: -5px -5px 2px 1px grey;        
-
+    #calcDisplay__input1 {
+        position: relative;
+        //top: $calcDisplayTop;
+        height: $calcDisplayLineHeight1;
+        line-height: $calcDisplayLineHeight1;
+        width: $calcDisplayWidth;
+        font-size: $calcDisplayLine1FontSize;
+        text-align: right;
+        text-indent: -10px;
+        background-color: grey;
+    }
+    #calcDisplay__input2 {
+        position: relative;
+        height: $calcDisplayLineHeight2;
+        line-height: $calcDisplayLineHeight2;
+        width: $calcDisplayWidth;
+        font-size: $calcDisplayLine2FontSize;
+        text-align: right;
+        background-color: rgb(207, 143, 143);
+    }
 }
 
 .keypad {

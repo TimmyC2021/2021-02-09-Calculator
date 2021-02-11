@@ -38,5 +38,5 @@ var toggleRunning = function toggleRunning(event) {
     runningMagic.dataset.running = 'closed';
   }
 
-  ; //console.log("End of call");
+  ;
 };

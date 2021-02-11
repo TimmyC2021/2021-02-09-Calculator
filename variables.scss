@@ -20,6 +20,14 @@ $calcDisplayTop: 20px;
 $calcDisplayLeft: ($calcCaseWidth - $calcDisplayWidth) / 2;
 $calcDisplayBackColor: white;
 
+// Display line 1 (lesser)
+$calcDisplayLineHeight1: 40px;
+$calcDisplayLine1FontSize: $calcDisplayLineHeight1 * 0.9;
+
+// Display line 2 (major)
+$calcDisplayLineHeight2: $calcDisplayHeight - $calcDisplayLineHeight1;
+$calcDisplayLine2FontSize: $calcDisplayLineHeight2 * 0.9;
+
 // Keypad size and position
 
 $keyPadWidth: $calcDisplayWidth;
